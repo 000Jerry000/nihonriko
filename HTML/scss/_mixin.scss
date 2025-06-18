@@ -1,0 +1,21 @@
+//
+// 
+//
+// =============================================
+// フォント周り一括設定 
+// 引数：fontsize、lineheight、fontweight、AV値
+// 全てXDの値そのまま入れる(fontweightだけ数値かも)。必要ない項目はfalse
+// =============================================
+@mixin font_around($pixels, $height: false, $weight: false, $spacing: false){
+	font-size: $pixels * 1px;
+	@if $weight {
+        font-weight: $weight;
+	}
+	@if $height {
+        line-height: $height / $pixels;
+	}
+	@if $spacing {
+        letter-spacing: $spacing / 1000 * 1em;
+		//letter-spacing: math.div($spacing,1000) * 1em;
+	}
+}

@@ -1,0 +1,308 @@
+@mixin viewmore(){
+	text-align: right;
+	a{
+		display: inline-flex;
+		align-items: center;
+		span.circle{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-left:3px;
+			border-radius:50%;
+			border:1px solid $blue;
+			width: 26px;
+			aspect-ratio: 1/1;
+			margin:5px 0 0 8px;
+			background: #fff url('../images/common/link_arr.svg') no-repeat center center;
+			background-size: 16px auto;
+			transition:all 0.3s ease;
+			position: relative;
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				aspect-ratio: 1/1;
+				border-radius: 50%;
+				box-shadow: none;
+				transform:scale(1);
+			}
+		}
+		&:hover{
+			text-decoration: none;
+			span.circle{
+				background: $blue url('../images/common/link_arr_w.svg') no-repeat center center;
+				background-size: 16px auto;
+				&:after{
+					animation: ripple 0.6s ease .1s;
+				}
+			}
+			
+		}
+
+	}
+}
+@mixin circle_link(){
+	a:hover{
+		text-decoration: none;
+	}
+	a{
+		display: block;
+		position: relative;
+		width: 100%;
+		p{
+			padding: 0 0 0 115px;
+			@media #{$sp}{
+				padding: 0 0 0 60px;
+			}
+			span{
+				display: block;
+				text-align: left;
+				&.en{
+					font-family: $bahnschrift;
+					letter-spacing: 0.22em;
+					font-size: 26px;
+					line-height: 2;
+					//https://ics.media/entry/240801/
+					overflow: hidden; 
+					color: transparent;
+					white-space: nowrap;
+					text-shadow: 0 1.5em 0 $blue, 0 0 0 $blue;
+					transition: text-shadow 0.3s;
+					@media #{$sp}{
+						font-size: 20px;
+					}
+				}
+				&.jp{
+					font-weight: 200;
+					font-size: 15px;
+					line-height: 1;
+					white-space: nowrap;
+					color:$textcolor_base;
+					@media #{$sp}{
+						font-size: 12px;
+					}
+				}
+			}
+		}
+		.circle{
+			position: absolute;
+			left:0;
+			top:-50px;
+			z-index:-1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius:50%;
+			border:1px solid $blue;
+			width: 160px;
+			aspect-ratio: 1/1;
+			transition:all 0.3s ease;
+			transform:scale(1);
+			@media #{$sp}{
+				width: 80px;
+				top:-16px;
+			}
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				aspect-ratio: 1/1;
+				border-radius: 50%;
+				box-shadow: none;
+				transform:scale(1);
+			}
+			span{
+				overflow: hidden;
+				width: 24px;
+				aspect-ratio: 1/1;
+				line-height: 1;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				position: relative;
+				&:before,
+				&:after {
+					content:'';
+					width: 100%;
+					aspect-ratio: 1/1;
+					background: url('../images/common/link_arr_w.svg') no-repeat center center;
+					background-size: 100% auto;
+					position: absolute;
+					top: 0;
+					right: 0;
+					animation-fill-mode: forwards;
+					animation-duration: 0.2s;
+				}
+				&:after {
+					transform: translateX(-100%);
+				}
+				&:before {
+					background: url('../images/common/link_arr_b.svg') no-repeat center center;
+					background-size: 100% auto;
+				}
+			}
+
+		}
+		&:hover{
+			p .en{
+				text-shadow: 0 0 0 $blue, 0 -1.5em 0 $blue;
+			}
+			.circle{
+				background: rgba($blue,0.8);
+				animation: scale_animation 0.5s linear .1s;
+				&:after{
+					animation: ripple 0.6s ease .1s;
+				}
+				span{
+					&:before {
+						animation-name: transformRightLeft;
+						animation-delay: 0s;
+						}
+					&:after {
+						animation-name: transformLeftRight;
+						animation-delay: 0.2s;
+						}
+				}
+			}
+		}
+	}
+}
+@mixin right_circle_link(){
+	a:hover{
+		text-decoration: none;
+	}
+	a{
+		display: inline-block;
+		position: relative;
+		p{
+			padding: 0 40px 0 0;
+			span{
+				display: block;
+				text-align: right;
+				&.en{
+					font-family: $bahnschrift;
+					letter-spacing: 0.22em;
+					font-size: 19px;
+					line-height: 1.6;
+					position: relative;
+					white-space: nowrap;
+					padding: 0 10px;
+					@media #{$sp}{
+						font-size: 16px;
+					}
+					&:after {
+						position: absolute; 
+						left: 0; 
+						bottom:-2px;
+						content: '';
+						width: 100%;
+						height: 2px;
+						background: $blue;
+						transform: scale(0, 1); 
+						transform-origin: left top;
+						transition: transform 0.3s;
+					}
+				}
+				&.jp{
+					font-weight: 200;
+					font-size: 12px;
+					line-height: 2;
+					padding: 0 10px;
+					white-space: nowrap;
+					color:$textcolor_base;
+					@media #{$sp}{
+						font-size: 10px;
+					}
+				}
+			}
+		}
+		.circle{
+			position: absolute;
+			right:0;
+			top:6px;
+			z-index:-1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius:50%;
+			border:1px solid $blue;
+			width: 42px;
+			aspect-ratio: 1/1;
+			transition:all 0.3s ease;
+			transform:scale(1);
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 42px;
+				aspect-ratio: 1/1;
+				border-radius: 50%;
+				box-shadow: none;
+				transform:scale(1);
+			}
+			span{
+				overflow: hidden;
+				width: 100px;
+				aspect-ratio: 1/1;
+				line-height: 1;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				position: relative;
+				&:before,
+				&:after {
+					content:'';
+					width: 100%;
+					aspect-ratio: 1/1;
+					background: url('../images/common/link_arr_w.svg') no-repeat left top 14px;
+					background-size: 80% auto;
+					position: absolute;
+					top: 0;
+					right: 0;
+					animation-fill-mode: forwards;
+					animation-duration: 0.2s;
+				}
+				&:after {
+					transform: translateX(-100%);
+				}
+				&:before {
+					background: url('../images/common/link_arr.svg') no-repeat left top 14px;
+					background-size: 80% auto;
+				}
+			}
+
+		}
+		&:hover{
+			p{
+				.en{
+					&:after{
+						transform: scale(1, 1);
+					}
+				}
+			}
+			.circle{
+				background: $blue;
+				animation: scale_animation 0.5s linear .1s;
+				border:2px solid transparent;
+				&:after{
+					animation: ripple 0.6s ease .1s;
+				}
+				span{
+					&:before {
+						animation-name: transformRightLeft;
+						animation-delay: 0s;
+						}
+					&:after {
+						animation-name: transformLeftRight;
+						animation-delay: 0.2s;
+						}
+				}
+			}
+		}
+	}
+}

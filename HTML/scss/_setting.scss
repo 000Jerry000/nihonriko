@@ -1,0 +1,28 @@
+//値セット
+$textcolor_base:#5a5a5a;
+//$linkcolor_base :#6495ed;
+//$linkhovercolor_base :#6495ed;
+$linkcolor_base :#004ba0;
+$linkhovercolor_base :#004ba0;
+$blue :#004ba0;
+
+
+$bahnschrift: "bahnschrift", sans-serif; //200,300,600
+$gennokaku: "source-han-sans-japanese", sans-serif; //200,400,700,
+
+$mainpagesize: 1165px;
+$widemainpagesize: 1488px;
+
+$spsize:5.3%;	
+
+$sp320:  "only screen and (max-width:320px)";
+$sp375:  "only screen and (max-width:375px)";
+$sp414:  "only screen and (max-width:414px)";
+$sp:  "only screen and (max-width:650px)";//560
+$tablet: "only screen and (max-width:769px)";
+$tabletwide: "only screen and (max-width:959px)";//959
+$undermorepc: "only screen and (max-width:1164px)";
+
+$pc:  "only screen and (min-width:651px)";//561
+$morepc:  "print, screen and (min-width:1165px)";
+$widemorepc:  "print, screen and (min-width:1488px)";
