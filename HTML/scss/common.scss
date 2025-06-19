@@ -5,6 +5,10 @@
 	//scroll-behavior: smooth;
 	//scroll-padding-top: 65px;
 //}
+html {
+	font-size: calc(100vw / 1920);
+}
+
 body{
 	background-color: #fff;
 	font-family: source-han-sans-japanese, sans-serif; //200,400,700,
