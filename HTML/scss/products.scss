@@ -284,7 +284,7 @@
         }
       }
       h3.kori {
-        letter-spacing: 15rem;
+        letter-spacing: 12rem;
         font-size: 60rem;
         padding: 0 20rem;
       }
@@ -367,6 +367,11 @@
           width: 100%;
           height: auto;
         }
+      }
+      .pain-img {
+        width: 800rem;
+        margin: 0 auto;
+        margin-top: 150rem;
       }
     }
 
@@ -451,18 +456,18 @@
         padding: 0 $spsize;
       }
       .icon {
-        width: 10%;
-        display: flex;
+        width: 165rem;
+        // display: flex;
         aspect-ratio: 1/1;
-        justify-content: center;
-        align-items: center;
+        // justify-content: center;
+        // align-items: center;
         font-size: 20px;
         line-height: 1;
         text-align: center;
         color: $blue;
       }
       h3 {
-        padding: 2% 0 0 5%;
+        padding: 0 0 0 5%;
         font-size: 36px;
         font-weight: 400;
         color: $blue;
@@ -509,6 +514,36 @@
         font-size: 45rem;
       }
     }
+    &.pain {
+      .widepage_center{
+        margin-top: 60rem;
+        display: flex;
+        justify-content: space-between;
+        .block_ttl_area {
+          transform: translate(0);
+          gap: 20rem;
+          h3{
+            position: relative;
+            width: max-content;
+            padding: 0;
+            .sub_text {
+              position: absolute;
+              top: 100%;
+              font-size: 27rem;
+              line-height: 1.5;
+              color: #5a5a5a;
+              li{
+                list-style: disc;
+                transform: translateX(35rem);
+              }
+            }
+          }
+        }
+        .img {
+          width: 650rem;
+        }
+      }
+    }
   }
   &.animal {
     display: flex;
@@ -536,12 +571,12 @@
         .icon {
           width: 130rem;
         }
-        .part_right{
+        .part_right {
           line-height: 1.2;
-          .sub_ttl{
+          .sub_ttl {
             font-size: 27rem;
           }
-          .sub_text{
+          .sub_text {
             font-size: 35rem;
           }
         }
@@ -625,7 +660,9 @@
       }
     }
     h3 {
-      padding: 2% 0 0 2%;
+      padding: 0% 2% 0 2%;
+      display: flex;
+      align-items: center;
       font-size: 36px;
       font-weight: 400;
       color: $blue;
