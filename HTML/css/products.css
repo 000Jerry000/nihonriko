@@ -32,6 +32,11 @@
   font-weight: 400;
 }
 
+.pagename_area.product .line {
+  top: -128rem;
+  z-index: -1;
+}
+
 .pagename_area.product.nioeiair_pro {
   background: url("../images/products/bg_pagename_nioeair_product.png") no-repeat left top;
   background-size: 50% auto;
@@ -62,7 +67,7 @@
 
 .pagename_area .line {
   position: absolute;
-  top: 5%;
+  bottom: 5%;
   right: 0;
   width: 100%;
 }
