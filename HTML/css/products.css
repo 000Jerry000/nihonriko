@@ -12,6 +12,13 @@
   position: relative;
 }
 
+.pagename_area.pain {
+  background: url("../images/products/bg_pagename_pain.png") no-repeat left top;
+  background-size: 70% auto;
+  padding: 12% 0 5%;
+  position: relative;
+}
+
 .pagename_area .line {
   position: absolute;
   bottom: 5%;
