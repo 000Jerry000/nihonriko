@@ -46,6 +46,13 @@
   position: relative;
 }
 
+.pagename_area.product.animal_pro {
+  background: url("../images/products/bg_pagename_animal_product.png") no-repeat left top;
+  background-size: 50% auto;
+  padding: 4% 0 5%;
+  position: relative;
+}
+
 .pagename_area .line {
   position: absolute;
   top: 5%;
