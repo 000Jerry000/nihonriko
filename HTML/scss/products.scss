@@ -53,6 +53,13 @@
       padding: 4% 0 5%;
       position: relative;
     }
+    &.pain_relief_pro {
+      background: url("../images/products/bg_pagename_pain_product.png")
+        no-repeat left top;
+      background-size: 50% auto;
+      padding: 4% 0 5%;
+      position: relative;
+    }
   }
   .line {
     position: absolute;
@@ -187,8 +194,10 @@
           }
         }
         .explain {
-          font-size: 27rem;
-          letter-spacing: 5rem;
+          letter-spacing: 1rem;
+          .info {
+            font-size: 27rem;
+          }
         }
       }
     }
