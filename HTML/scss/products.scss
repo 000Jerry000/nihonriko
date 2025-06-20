@@ -21,9 +21,49 @@
     padding: 12% 0 5%;
     position: relative;
   }
+  &.product {
+    h1 {
+      padding: 0;
+      .jp {
+        font-size: 30rem;
+      }
+      .en {
+        font-size: 82rem;
+        font-weight: 400;
+      }
+    }
+    &.nioeiair_pro {
+      background: url("../images/products/bg_pagename_nioeair_product.png")
+        no-repeat left top;
+      background-size: 50% auto;
+      padding: 4% 0 5%;
+      position: relative;
+    }
+    &.kori_care_pro {
+      background: url("../images/products/bg_pagename_kori_product.png")
+        no-repeat left top;
+      background-size: 50% auto;
+      padding: 4% 0 5%;
+      position: relative;
+    }
+    &.animal_pro {
+      background: url("../images/products/bg_pagename_animal_product.png")
+        no-repeat left top;
+      background-size: 50% auto;
+      padding: 4% 0 5%;
+      position: relative;
+    }
+    &.pain_relief_pro {
+      background: url("../images/products/bg_pagename_pain_product.png")
+        no-repeat left top;
+      background-size: 50% auto;
+      padding: 4% 0 5%;
+      position: relative;
+    }
+  }
   .line {
     position: absolute;
-    bottom: 5%;
+    top: 5%;
     right: 0;
     width: 100%;
     svg {
@@ -67,6 +107,10 @@
         font-size: 24px;
         background-size: 300px auto;
       }
+    }
+    p {
+      margin-top: 100rem;
+      padding: 0 2%;
     }
   }
 }
@@ -133,6 +177,27 @@
         li {
           display: inline-block;
           @include right_circle_link();
+        }
+      }
+    }
+  }
+  &.product {
+    .main_item_inner {
+      .txt {
+        .ttl2 {
+          .en {
+            width: 100%;
+            text-align: center;
+            font-weight: 400;
+            padding: 0 20px 40px;
+            background-size: 700px auto;
+          }
+        }
+        .explain {
+          letter-spacing: 1rem;
+          .info {
+            font-size: 27rem;
+          }
         }
       }
     }
@@ -522,14 +587,14 @@
       }
     }
     &.pain {
-      .widepage_center{
+      .widepage_center {
         margin-top: 60rem;
         display: flex;
         justify-content: space-between;
         .block_ttl_area {
           transform: translate(0);
           gap: 20rem;
-          h3{
+          h3 {
             position: relative;
             width: max-content;
             padding: 0;
@@ -539,7 +604,7 @@
               font-size: 27rem;
               line-height: 1.5;
               color: #5a5a5a;
-              li{
+              li {
                 list-style: disc;
                 transform: translateX(35rem);
               }

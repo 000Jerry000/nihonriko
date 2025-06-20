@@ -19,9 +19,50 @@
   position: relative;
 }
 
+.pagename_area.product h1 {
+  padding: 0;
+}
+
+.pagename_area.product h1 .jp {
+  font-size: 30rem;
+}
+
+.pagename_area.product h1 .en {
+  font-size: 82rem;
+  font-weight: 400;
+}
+
+.pagename_area.product.nioeiair_pro {
+  background: url("../images/products/bg_pagename_nioeair_product.png") no-repeat left top;
+  background-size: 50% auto;
+  padding: 4% 0 5%;
+  position: relative;
+}
+
+.pagename_area.product.kori_care_pro {
+  background: url("../images/products/bg_pagename_kori_product.png") no-repeat left top;
+  background-size: 50% auto;
+  padding: 4% 0 5%;
+  position: relative;
+}
+
+.pagename_area.product.animal_pro {
+  background: url("../images/products/bg_pagename_animal_product.png") no-repeat left top;
+  background-size: 50% auto;
+  padding: 4% 0 5%;
+  position: relative;
+}
+
+.pagename_area.product.pain_relief_pro {
+  background: url("../images/products/bg_pagename_pain_product.png") no-repeat left top;
+  background-size: 50% auto;
+  padding: 4% 0 5%;
+  position: relative;
+}
+
 .pagename_area .line {
   position: absolute;
-  bottom: 5%;
+  top: 5%;
   right: 0;
   width: 100%;
 }
@@ -78,6 +119,11 @@
     font-size: 24px;
     background-size: 300px auto;
   }
+}
+
+.pagename_area h1 p {
+  margin-top: 100rem;
+  padding: 0 2%;
 }
 
 .sec_main_item .main_item_inner {
@@ -402,6 +448,22 @@
           animation-name: transformLeftRight;
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
+}
+
+.sec_main_item.product .main_item_inner .txt .ttl2 .en {
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+  padding: 0 20px 40px;
+  background-size: 700px auto;
+}
+
+.sec_main_item.product .main_item_inner .txt .explain {
+  letter-spacing: 1rem;
+}
+
+.sec_main_item.product .main_item_inner .txt .explain .info {
+  font-size: 27rem;
 }
 
 .sec_changeair .changeair_block {
