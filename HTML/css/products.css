@@ -19,24 +19,31 @@
   position: relative;
 }
 
-.pagename_area.nioeiair_pro {
-  background: url("../images/products/bg_pagename_nioeair_product.png") no-repeat left center;
+.pagename_area.product h1 {
+  padding: 0;
+}
+
+.pagename_area.product h1 .jp {
+  font-size: 30rem;
+}
+
+.pagename_area.product h1 .en {
+  font-size: 82rem;
+  font-weight: 400;
+}
+
+.pagename_area.product.nioeiair_pro {
+  background: url("../images/products/bg_pagename_nioeair_product.png") no-repeat left top;
   background-size: 50% auto;
   padding: 4% 0 5%;
   position: relative;
 }
 
-.pagename_area.nioeiair_pro h1 {
-  padding: 0;
-}
-
-.pagename_area.nioeiair_pro h1 .jp {
-  font-size: 30rem;
-}
-
-.pagename_area.nioeiair_pro h1 .en {
-  font-size: 82rem;
-  font-weight: 400;
+.pagename_area.product.kori_care_pro {
+  background: url("../images/products/bg_pagename_kori_product.png") no-repeat left top;
+  background-size: 50% auto;
+  padding: 4% 0 5%;
+  position: relative;
 }
 
 .pagename_area .line {
