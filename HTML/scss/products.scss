@@ -32,6 +32,10 @@
         font-weight: 400;
       }
     }
+    .line {
+      top: -128rem;
+      z-index: -1;
+    }  
     &.nioeiair_pro {
       background: url("../images/products/bg_pagename_nioeair_product.png")
         no-repeat left top;
@@ -63,7 +67,7 @@
   }
   .line {
     position: absolute;
-    top: 5%;
+    bottom: 5%;
     right: 0;
     width: 100%;
     svg {
